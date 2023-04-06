@@ -21,3 +21,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:10086/eureka
+userservice:
+  ribbon:
+    NFLoadBanlencerRuleClassName: com.netflix.loadbalancer.RandomRule
+ribbon:
+  eager-load:
+    enabled: true # 开启饥饿加载
+    clients: # zhi 指定饥饿加载的服务
+      - userservice
