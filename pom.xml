@@ -15,6 +15,7 @@
         <module>gateway</module>
         <module>publisher</module>
         <module>consumer</module>
+        <module>hotel-service</module>
     </modules>
 
     <packaging>pom</packaging>
