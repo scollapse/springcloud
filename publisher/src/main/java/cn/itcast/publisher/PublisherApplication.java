@@ -12,8 +12,12 @@ public class PublisherApplication {
         SpringApplication.run(PublisherApplication.class);
     }
 
-//    @Bean
-//    public MessageConverter messageConverter(){
-//        return new Jackson2JsonMessageConverter();
-//    }
+    /**
+     * 消息转换器
+     * @return
+     */
+    @Bean
+    public MessageConverter messageConverter(){
+        return new Jackson2JsonMessageConverter();
+    }
 }
